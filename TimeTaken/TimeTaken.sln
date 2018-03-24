@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTaken", "TimeTaken\TimeTaken.csproj", "{D7F9A8C9-E401-4D02-81CF-56089CD4DFAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTakenTests", "TimeTakenTests\TimeTakenTests.csproj", "{DD609BE1-19FF-4378-AEFE-C291D26BCC07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7F9A8C9-E401-4D02-81CF-56089CD4DFAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7F9A8C9-E401-4D02-81CF-56089CD4DFAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7F9A8C9-E401-4D02-81CF-56089CD4DFAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7F9A8C9-E401-4D02-81CF-56089CD4DFAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD609BE1-19FF-4378-AEFE-C291D26BCC07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD609BE1-19FF-4378-AEFE-C291D26BCC07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD609BE1-19FF-4378-AEFE-C291D26BCC07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD609BE1-19FF-4378-AEFE-C291D26BCC07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ECEC7871-206F-418B-A58B-B73A1FAFEEAE}
+	EndGlobalSection
+EndGlobal
