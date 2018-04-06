@@ -5,6 +5,7 @@ namespace Example
     using System.Collections.Generic;
     using System.Diagnostics;
     using System.Linq;
+    using System.Threading;
     using TimeTaken;
 
     class Program
@@ -29,7 +30,10 @@ namespace Example
             testResults.ExecutionTimeDisplayElapsedTicks(iterations);
             Trace.Listeners.Remove(myWriter);
             Console.WriteLine("Press 'Esc' to exit.");
-            while (Console.ReadKey(true).Key != ConsoleKey.Escape);
+            while (Console.ReadKey(true).Key != ConsoleKey.Escape)
+            {
+                Thread.Sleep(100);
+            };
         }
     }
 }
