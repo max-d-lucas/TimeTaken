@@ -1,14 +1,36 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>TimeTaken</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>Max Lucas</Authors>
-    <Company />
-    <Product />
     <Description>This package makes testing how long it takes for something to run. Built this to test things like which is faster 1 million iterations of "string".Any() vs "string" != "".</Description>
-    <Copyright>2108</Copyright>
-    <PackageLicenseUrl />
+	<Summary>Example: 
+	<![CDATA[
+```
+var testResults = (new Dictionary<string, Action>
+					{ { "testString == \"\"", () => { var testString = ""; var isEmpty = testString == ""; } }
+					, { "testString == string.Empty", () => { var testString = ""; var isEmpty = testString == string.Empty; } }
+					, { "string.Equals(testString, \"\"", () => { var testString = ""; var isEmpty = string.Equals(testString, ""); } }
+					, { "string.Equals(testString, string.Empty)", () => { var testString = ""; var isEmpty = string.Equals(testString, string.Empty); } }
+					, { "string.IsNullOrEmpty(testString)", () => { var testString = ""; var isEmpty = string.IsNullOrEmpty(testString); } }
+					, { "\"\".Equals(testString)", () => { var testString = ""; var isEmpty = "".Equals(testString); } }
+					, { "string.Empty.Equals(testString)", () => { var testString = ""; var isEmpty = string.Empty.Equals(testString); } }
+					, { "testString.Any()", () => { var testString = ""; var isEmpty = testString.Any(); } }
+					, { "testString.Count() == 0", () => { var testString = ""; var isEmpty = testString.Count() == 0; } }
+					, { "testString.Length == 0", () => { var testString = ""; var isEmpty = testString.Length == 0; } }
+					}).ExecutionTimeGet(iterations);
+testResults.ExecutionTimeDisplayElapsedTicks(iterations);
+``` ]]>
+	</Summary>
+    <Copyright>2018</Copyright>
+	<Title>TimeTaken</Title>
+    <Authors>Max Lucas</Authors>
+    <Company>Max Lucas</Company>
+    <RepositoryUrl>https://github.com/max-d-lucas/TimeTaken</RepositoryUrl>
+    <RepositoryType>Github</RepositoryType>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/max-d-lucas/TimeTaken</PackageProjectUrl>
   </PropertyGroup>
 
 </Project>
