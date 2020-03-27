@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeTakenTests", "TimeTakenTests\TimeTakenTests.csproj", "{DD609BE1-19FF-4378-AEFE-C291D26BCC07}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example", "Example\Example.csproj", "{51115A4D-A30A-4C03-ABAA-571F7FEB762B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2A128EBE-3111-44E6-B9FA-E3EE4D86BF65} = {2A128EBE-3111-44E6-B9FA-E3EE4D86BF65}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeTaken", "TimeTaken\TimeTaken.csproj", "{2A128EBE-3111-44E6-B9FA-E3EE4D86BF65}"
 EndProject
